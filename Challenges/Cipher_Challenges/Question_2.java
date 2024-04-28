@@ -3,14 +3,15 @@ import java.util.Scanner;
 
 public class Question_2 {
 
-    public static String feistelEncrypt(String text, int key) {
+    public static void feistelEncrypt(String phrase, int key) {
 
-        String codedText = "";
+        String leftHalf = phrase.substring(0, phrase.length() / 2);//Start to half
+        String rightHalf = phrase.substring(phrase.length() / 2);//Half to end
 
 
 
 
-        return codedText;
+
     }
 
     public static int f_and(){
@@ -20,16 +21,16 @@ public class Question_2 {
     }
 
     public static String getPhrase() {
-        String phrase;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Insert the phrase to be coded:");
-        phrase = scanner.nextLine(); // Lê a frase fornecida pelo usuário
+        String phrase = scanner.nextLine(); // Lê a frase fornecida pelo usuário
+
         System.out.println("Press Enter to continue...");
         scanner.nextLine(); // Aguarda a entrada do usuário
         System.out.println();
 
-        return phrase; // Retorna a frase a ser cifrada
+        return phrase; // Retorna a frase a ser cifrada dentro do vetor
     }
 
 
