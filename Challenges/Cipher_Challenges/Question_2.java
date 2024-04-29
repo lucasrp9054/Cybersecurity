@@ -1,23 +1,19 @@
 import java.util.Scanner;
 
-
 public class Question_2 {
 
-    public static void feistelEncrypt(String phrase, int key) {
-
+    public static String feistelEncrypt(String phrase, int key) {
         String leftHalf = phrase.substring(0, phrase.length() / 2);//Start to half
         String rightHalf = phrase.substring(phrase.length() / 2);//Half to end
 
+        // Implemente aqui a lógica da cifragem Feistel
 
-
-
-
+        return ""; // Retornando uma string vazia por enquanto
     }
 
     public static int f_and(){
-
-
-        return 0;
+        // Aqui você implementará a função "f_and" para a lógica Feistel
+        return 0; // Por enquanto, está retornando apenas 0
     }
 
     public static String getPhrase() {
@@ -33,13 +29,9 @@ public class Question_2 {
         return phrase; // Retorna a frase a ser cifrada dentro do vetor
     }
 
-
-
     public static void main(String[] args) {
-
-        int key= 0;//Mudar
+        int key = 0; // Você pode definir uma chave de criptografia aqui
         String phrase = getPhrase();
         String codedPhrase = feistelEncrypt(phrase, key);
-
     }
 }

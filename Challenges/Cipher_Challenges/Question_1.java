@@ -86,6 +86,16 @@ public class Question_1 {
         System.out.println("Coded Phrase: " + codedPhrase); // Exibe a frase cifrada
         System.out.println("Most Common Letter: " + (char) ('a' + starter_test_key)); // Exibe a letra mais comum
 
+        System.out.println("Logic Explanation:");
+        System.out.println("The logic used here is the frequency analysis of letters in the Portuguese language.");
+        System.out.println("First, we decrypt the phrase using the Caesar cipher for all possible keys.");
+        System.out.println("Then, we count the frequency of each letter in the decrypted phrase.");
+        System.out.println("Next, we calculate the difference between the expected frequency of letters in Portuguese and the actual frequency found in the decrypted phrase.");
+        System.out.println("The most likely starting key is the one that results in the smallest difference between the expected and actual frequencies.");
+        System.out.println("This key is then used to fully decrypt the phrase and display the results.");
+        System.out.println();
+
+
         // Decifra a frase para todas as chaves possíveis a partir da chave inicial mais provável
         for (int key = starter_test_key; key < 26; key++) {
             String decodedPhrase = decryptCaesar(codedPhrase, key); // Decifra a frase usando a chave atual
