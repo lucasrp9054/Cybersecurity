@@ -66,11 +66,10 @@ public class Question_1 {
 
     // Função para obter a frase cifrada do usuário
     public static String getCodedPhrase() {
-        String codedPhrase;
-        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Insert the coded phrase:");
-        codedPhrase = scanner.nextLine(); // Lê a frase cifrada fornecida pelo usuário
+        Scanner scanner = new Scanner(System.in);
+        String codedPhrase = scanner.nextLine(); // Lê a frase cifrada fornecida pelo usuário
         System.out.println("Press Enter to continue...");
         scanner.nextLine(); // Aguarda a entrada do usuário
         System.out.println();
